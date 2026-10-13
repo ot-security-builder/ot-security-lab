@@ -47,5 +47,17 @@ Getting started with Operational Technology Security Engineering
 - **Physical security:** controlling access to sites, cabinets, and devices.
 - **Data security:** protecting information at rest and in transit.
 
+### 5. Air gaps
+- An **air gap** means the OT network has no physical or network connection to IT or the internet.
+- It's often treated as the main defense, but it's weaker than it sounds: USB drives, vendor laptops, and maintenance connections regularly cross it.
+- Lesson: an air gap reduces risk but doesn't remove it. Removable media and vendor access still need controls.
+
+### 6. Stuxnet (discovered 2010)
+- Malware that targeted Iran's Natanz uranium enrichment facility.
+- Widely believed to have entered the air-gapped network via infected USB drives.
+- Targeted Siemens Step7 software and Siemens S7 PLCs controlling centrifuges.
+- Changed centrifuge speeds to damage them, while showing operators normal readings on their HMIs.
+- Why it matters: first well-known malware to cause **physical damage** through ICS, and proof that air gaps and "looks normal on screen" aren't enough.
+
 ### Terms to revisit
-- OPSEC, Shields Up, whaling, Defense-in-Depth
+- OPSEC, Shields Up, whaling, Defense-in-Depth, Air gaps, Stuxnet
